@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../App.css";
 import { useDropzone } from "react-dropzone";
 import { FaCloudDownloadAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Ticket from "./Ticket";
 
 
 function Form() {
@@ -48,6 +50,12 @@ function Form() {
                     <div><p>Enter your name</p><input type="text" size="40" /></div>
                     <div><p>Enter your email *</p><input type="email" placeholder="hello@avloflagos.io" size="40"/></div>
                     <div><p>About the project</p><textarea placeholder="textarea" rows="4" cols="40"></textarea></div>
+                    <div className="btn-class">
+                        <button className="cancel">Back</button>
+                        <Link to="/selection/form/ticket">
+                            <button type="submit" >Get My Free Tickets</button>
+                        </Link>
+                    </div>
                 </div>
             </form>
         </div>

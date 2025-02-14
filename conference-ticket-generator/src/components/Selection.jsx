@@ -34,9 +34,21 @@ function Selection(){
                             <div className="inner3">
                                 <h4>Select Ticket Type</h4>
                                 <div className="inner31">
-                                    <div className="box"></div>
-                                    <div className="box"></div>
-                                    <div className="box"></div>
+                                    <div className="box">
+                                        <h4>Free</h4>
+                                        <h5>REGULAR ACCESS</h5>
+                                        <p>20/52</p>
+                                    </div>
+                                    <div className="box">
+                                        <h4>$150</h4>
+                                        <h5>VIP ACCESS</h5>
+                                        <p>20/52</p>
+                                    </div>
+                                    <div className="box">
+                                        <h4>$150</h4>
+                                        <h5>VVIP ACCESS</h5>
+                                        <p>20/52</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="inner4">
@@ -51,7 +63,10 @@ function Selection(){
                             </div>
                             <div className="inner5">
                                 <button type="submit" className="cancel">Cancel</button>
-                                <button type="submit">Next</button>
+                                <Link to="/selection/form">
+                                    <button type="submit">Next</button>
+                                </Link>
+                                
                             </div>
                         </div>
                     </div>

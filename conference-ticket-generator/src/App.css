@@ -100,11 +100,12 @@
   background-color: transparent;
 }
 
-.major{
+.major, .main{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
   gap: 20px;
 }
 .major1{
@@ -126,12 +127,13 @@ li{
 a{
   text-decoration: none;
 }
-.major2{
+.major2, .main-hero{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 80vh;
+  padding: 20px;
+  gap: 10px;
   border-radius: 10px;
   border: 1px solid #003238;
 }
@@ -161,7 +163,7 @@ a{
   color: #fff;
 }
 
-.major21 input[type="range"] {
+input[type="range"] {
   width: 100%;
   height: 8px;
   border-radius: 5px;
@@ -172,11 +174,11 @@ a{
   transition: 0.3s ease-in-out;
 }
 
-.major21 input[type="range"]:hover {
+ input[type="range"]:hover {
   background: linear-gradient(to right, #00ffff, #00a0b3);
 }
 
-.major223{
+.major223, .in-hero, .in-in{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,8 +186,9 @@ a{
   border-radius: 10px;
   border: 1px solid #003238;
   gap:10px;
+  padding: 20px;
 }
-.inner1{
+.inner1, .jumb{
   width: 90%;
   padding: 20px;
   display: flex;
@@ -229,6 +232,17 @@ a{
   font-weight: bold;
   margin-bottom: 10px;
 }
+.inner4 select{
+  width: 300px;
+  height: 30px;
+  border: 1px solid #003238;
+  border-radius: 5px;
+  color: #fff;
+
+}
+.inner4 h4{
+  color: #fff;
+}
 
 /* Styling the ticket selection boxes */
 .inner31 {
@@ -271,7 +285,7 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   margin: 5px;
   cursor: pointer;
@@ -279,9 +293,9 @@ button {
 }
 
 /* Primary Button */
-button[type="submit"] {
+  button[type="submit"] {
   background-color: #00a2b8;
-  color: white;
+  color: #00515c;
 }
 
 button[type="submit"]:hover {
@@ -294,7 +308,7 @@ button.cancel {
   margin: 5px;
   background-color: transparent;
   border: 1px solid #003238;
-  color: white;
+  color: #00515c;
 }
 
 button.cancel:hover {
@@ -310,4 +324,9 @@ button.full-width {
 /* Rounded Buttons */
 button.rounded {
   border-radius: 50px;
+}
+.main-hero .hero-h{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
 }
